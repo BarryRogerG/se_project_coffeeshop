@@ -22,10 +22,10 @@ rel="stylesheet">
       <nav class="nav">
         <img src="./images/logo_coffeeshop_dark.svg" alt="Coffeeshop logo" class="nav__logo">
         <ul class="nav__links">
-          <li><a href="#recipes" class="nav__link"></a>Recipes</li>
-          <li><a href="#table" class="nav__link"></a>Book a table</li>
-          <li><a href="#menu" class="nav__link"></a>Menu</li>
-          <li><a href="#footer" class="nav__link"></a>Contacts</li>
+          <li><a class="nav__link" href="#recipes"></a>Recipes</li>
+          <li><a class="nav__link" href="#reservations"></a>Book a table</li>
+          <li><a class="nav__link" href="#menu"></a>Menu</li>
+          <li><a class="nav__link" href="#footer"></a>Contacts</li>
         </ul>
       </nav>
       <h1 class="header__title"><span class="header__span-accent">Specialty Coffee</span> in the Tripple Peaks Library</h1>
@@ -41,7 +41,7 @@ rel="stylesheet">
       </div>
     </header>
     <main class="content">
-    <section class="recipes">
+    <section class="recipes" id="recipes">
       <h2 class="recipes__title">Recipes</h2>
       <p class="recipes__subtitle">Check out some recipes we've collected for
         your home-brewing convenience:</p>
@@ -58,11 +58,55 @@ rel="stylesheet">
           </div>
         </div>
     </section>
-    <section class="reservation"></section>
-    <section class="menu"></section>
-    <section class="about"></section>
+    <section class="reservation" id="reservations">
+      <div class="form__container">
+
+          <h3 class="reservation__title">Book a table</h3>
+          <fieldset class="reservation__form">
+            <label for="name" class="form__label">Name*</label>
+            <input
+            type="text"
+            class="form__input"
+            name="name*"
+            placeholder="Name Surname"
+            />
+            <label for="number of guests" class="form__label">Number of guests*</label>
+            <input
+            type="text"
+            class="form__input"
+            name="number of guests"
+            placeholder="1-8"/>
+            <label for="datetime-local" class="form__label">Date & time*</label>
+            <input
+            type="datetime-local"
+            class="form__input"
+            name="datetime-local"
+            placeholder="datetime-local"/>
+            <label for="your email" class="form__label">Your email*</label>
+            <input
+            type="text"
+            class="form__input"
+            name="your email"
+            placeholder="email@email.com"/>
+
+            <button type="submit" class="form__button">Book a table</button>
+
+            <fieldset class="form__fieldset">
+              <input
+                type="checkbox"
+                class="form__checkbox"
+                name="i-agree-with-the-terms-of-use"
+                id="checkbox"
+              />
+              <label for="i-agree-with-the-terms-of-use" class="form__label_type_checkbox">I agree with the terms of use</label>
+            </fieldset>
+            </div>
+
+    </section>
+    <section class="menu" id="menu"></section>
+    <section class="about" id="about"></section>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer" id="footer"></footer>
 </div>
 </body>
 </html>

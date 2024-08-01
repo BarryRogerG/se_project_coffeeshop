@@ -1,0 +1,21 @@
+.about {
+background-color: #0A2850;
+display: flex;
+color: white;
+justify-content: space-between;
+overflow: hidden;
+position: relative;
+}
+
+@keyframes pulsate {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity:1;
+  }
+}

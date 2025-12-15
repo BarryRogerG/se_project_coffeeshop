@@ -1,0 +1,40 @@
+.login-modal__field {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.login-modal__label {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  color: #2f71e5;
+  font-family: 'Inter', sans-serif;
+}
+
+.login-modal__input {
+  padding: 10px 0;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #000000;
+  font-family: 'Inter', sans-serif;
+  background-color: transparent;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.login-modal__input:focus {
+  border-bottom-color: #2f71e5;
+}
+
+.login-modal__input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.login-modal__input:invalid {
+  border-bottom-color: rgba(0, 0, 0, 0.2);
+}
+

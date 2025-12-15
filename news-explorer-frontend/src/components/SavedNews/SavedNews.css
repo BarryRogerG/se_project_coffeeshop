@@ -1,0 +1,138 @@
+.saved-news {
+  flex: 1;
+  width: 100%;
+  background-color: #ffffff;
+  padding-top: 0;
+}
+
+.saved-news__header {
+  padding: 40px 40px 56px;
+  background-color: #ffffff;
+}
+
+.saved-news__breadcrumb {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(0, 0, 0, 0.5);
+  margin: 0 0 40px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.saved-news__title {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 46px;
+  color: #1a1a1a;
+  margin: 0 0 28px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.saved-news__subtitle {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: rgba(26, 27, 34, 0.5);
+  margin: 0 0 30px 0;
+  font-family: 'Inter', sans-serif;
+}
+
+.saved-news__keywords {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: baseline;
+}
+
+.saved-news__keywords-label {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #1a1a1a;
+  font-family: 'Inter', sans-serif;
+}
+
+.saved-news__keywords-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+}
+
+.saved-news__keyword {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #1a1a1a;
+  font-family: 'Inter', sans-serif;
+}
+
+.saved-news__content {
+  background-color: #f5f5f5;
+  padding: 62px 40px;
+  min-height: 400px;
+}
+
+.saved-news__cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 16px;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.saved-news__empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 282px;
+  padding: 80px 0;
+}
+
+.saved-news__empty-text {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #b6bcbf;
+  margin: 0;
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+}
+
+@media (max-width: 768px) {
+  .saved-news__header {
+    padding: 16px 16px 32px;
+  }
+
+  .saved-news__breadcrumb {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+
+  .saved-news__title {
+    font-size: 30px;
+    line-height: 34px;
+    margin-bottom: 16px;
+  }
+
+  .saved-news__subtitle {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 16px;
+  }
+
+  .saved-news__keywords-label,
+  .saved-news__keyword {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .saved-news__content {
+    padding: 24px 16px;
+  }
+
+  .saved-news__cards-grid {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+}
